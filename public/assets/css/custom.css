@@ -1,0 +1,114 @@
+/* Basic */
+
+.text-start {
+    text-align: start!important;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+.table td, .table th {
+    vertical-align: middle;
+}
+/* End Basic */
+
+
+/* Each page */
+
+/* Product add */
+.delete-variant, .delete-tiered {
+    font-size: 23px;
+    display: flex;
+    margin-top: 32px;
+    width: fit-content;
+}
+
+/* product-card */
+.price-label {
+    font-size: 16px;
+}
+
+.product-img, .product-img-new {
+    height: 150px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.product-img-sm {
+    height: 80px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.product-imgs-preview .product-img.selected, .product-imgs-preview .product-img-new.selected  {
+    border: 5px solid rgba(246, 176, 177, .3);
+}
+
+.product-imgs-preview .product-img-item {
+    position: relative;
+}
+
+.product-imgs-preview .product-img-item .delete-img-btn {
+    position: absolute;
+    bottom: 0;
+    right: 14px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.delivery-steps {
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    position: relative;
+}
+
+.delivery-steps .delivery-step-bar {
+    height: 6px;
+    background-color: gray;
+    position: absolute;
+    top: 64px;
+    /* left: 130px; */
+    /* width: calc(100% - 260px); */
+    width: 76%;
+    left: 12%;
+}
+
+.delivery-steps .delivery-step-item {
+    text-align: center;
+}
+
+.delivery-steps .delivery-step-item .delivery-step-dot {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.delivery-steps .delivery-step-item.active .delivery-step-dot {
+    background-color: green;
+}
+
+.delivery-steps .delivery-step-item.active h6 {
+    color: green;
+}
